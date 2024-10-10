@@ -1,0 +1,29 @@
+@import url("/css/common.css");
+
+.page-wrapper {
+    flex-wrap: wrap;
+}
+
+.all-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.page-title {
+  font-size: 130px;
+}
+
+.medium-text {
+  font-size: 36px;
+  padding: 15px;
+}
+
+.medium-text-wrapper {
+  max-width: 556px;
+}
+
+
+
+img {
+    padding: 20px;
+}

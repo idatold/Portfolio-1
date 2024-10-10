@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   height: 100vh;
 }
@@ -26,33 +27,46 @@ body {
 
 .hero-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row; /* Horizontal layout: Image on left, links on right */
+  align-items: center; /* Align items vertically in the center */
+  gap: 5rem; /* Space between the image and links */
+  width: 900px;
 }
 
 .hero-links-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Stack links vertically */
   justify-content: center;
-  margin-left: 5rem;
+  gap: 1rem; /* Space between each link */
+  overflow: hidden; /* Ensure no overflow cutting off text */
 }
 
 .heading-link {
-  font-size: 102px;
   text-decoration: none;
   color: #000;
   text-transform: uppercase;
-  font-family: "Crimson Text", "sans-serif";
-  transition: font-style 0.2s ease; /* Smooth transition for font-style and color */
+  transition: transform 0.5s ease, font-style 0.1 s ease;
+  white-space: nowrap; /* Prevent text wrapping */
+  padding-right: 15px; /* Add padding to avoid cut-off on the right */
+  overflow: hidden; /* Ensure no overflow */
+  font-size: 102px;
 }
 
+.heading-link,
+.page-title,
+.medium-text {
+  font-family: "Crimson Text", "sans-serif";
+}
 .heading-link:hover {
-    font-style: italic; 
-    
-  }
+  transform: translateX(10px); /* Move the link to the right on hover */
+  font-style: italic; /* Italicize the link on hover */
+}
 
 .small-text-wrapper {
-    padding: 30px;
-    margin-top: 1rem;
+  padding: 30px;
+  margin-top: 1rem;
+  overflow: hidden;
+  max-width: 330px;
 }
 
 h1,
@@ -67,7 +81,13 @@ h1,
   font-size: 20px;
 }
 
+.image-wrapper {
+  position: relative;
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
 /* ---------------------------------------- */
+
 .sidebar-wrapper {
   position: absolute;
   top: 0;
@@ -88,4 +108,13 @@ h1,
   color: black;
   text-transform: uppercase;
   padding: 20px;
+  font-size: 15px;
+}
+
+.line-through:hover {
+  text-decoration: line-through;
+}
+::selection {
+  background-color: #000; /* Color of the highlighted background */
+  color: #fff; /* Color of the text when highlighted */
 }
