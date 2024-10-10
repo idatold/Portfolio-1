@@ -1,16 +1,13 @@
 @import url("/css/common.css");
 
 .page-wrapper {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .all-text-wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-}
-.page-title {
-  font-size: 130px;
 }
 
 .medium-text {
@@ -22,8 +19,6 @@
   max-width: 556px;
 }
 
-
-
 img {
-    padding: 20px;
+  padding: 20px;
 }

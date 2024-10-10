@@ -1,0 +1,40 @@
+@import url("/css/common.css");
+
+.medium-text-wrapper {
+  max-width: 300px;
+}
+
+.outer-work-wrapper {
+  margin-top: 82rem;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 637px;
+ padding-bottom: 5rem;
+ flex-wrap: wrap;
+}
+
+.image-text-wrapper {
+  margin-bottom: 2rem;
+}
+
+.heading-work-link {
+   text-decoration: none;
+   font-size: 24px;
+   padding: 15px;
+}
+
+.image-hover-color {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.image-hover-color:hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
+.medium-text {
+    padding: 20px;
+}
+
