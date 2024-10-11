@@ -2,7 +2,7 @@
 
 .page-wrapper {
   flex-wrap: wrap;
-  align-items:flex-start;
+  align-items: flex-start;
 }
 
 .all-text-wrapper {
@@ -19,8 +19,8 @@
 
 .medium-text-wrapper {
   max-width: 556px;
+  padding: 30px;
 }
-
 
 .small-text-decor {
   text-decoration: underline;
@@ -28,4 +28,82 @@
 .img {
   padding: 20px;
   top: 0%;
+}
+
+.content-wrapper {
+  display: flex;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.img-title-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.page-title {
+  margin-right: -1rem;
+}
+
+.contact-button {
+  background-color: #333;;
+  color:   #f1efe6;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 24px;
+  
+}
+.contact-button:hover {
+  transform: scale(1.1); /* Scale the button to 110% on hover */
+}
+
+.button-wrapper {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-container {
+  position: relative;
+  height: 150px; /* Adjust this height based on your design */
+  overflow: hidden; /* Hides the title before it slides in */
+}
+
+.slide-up-title {
+  font-size: rem;
+  opacity: 1;
+  transform: translateY(100%); /* Positioned below the container */
+  transition: transform 1.5s ease-out; /* Duration of animation */
+}
+
+/* The class that triggers the animation */
+.slide-up {
+  opacity: 1;
+  transform: translateY(0); /* Moves it to its final position */
+}
+
+
+/* ---------------------MEDIA------------------------- */
+
+@media (max-width: 1070px) {
+  .portrait-img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 850px) {
+  .page-title {
+    font-size: 80px;
+  }
+
+  .img-title-wrapper {
+    flex-direction: column;
+  }
+
+  .medium-text {
+    font-size: 28px;
+  }
 }
