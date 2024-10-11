@@ -144,6 +144,9 @@ h1,
   color: #fff; /* Color of the text when highlighted */
 }
 
+.navbar-wrapper {
+  display: none; /* Hide by default */
+}
 
 /* ---------------------MEDIA------------------------- */
 @media (max-width: 1100px) {
