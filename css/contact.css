@@ -36,4 +36,8 @@ img {
   .title-container {
     height: 120px; /* Adjust this height based on your design */
   }
+
+  .small-text {
+    text-align: center;
+  }
 }
