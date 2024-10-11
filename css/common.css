@@ -140,7 +140,7 @@ h1,
   background-color: #333; /* Color of the highlighted background */
   color: #fff; /* Color of the text when highlighted */
 }
-
+/* ---------------------MEDIA------------------------- */
 @media (max-width: 1100px) {
   .hero-container {
     width: 700px;
@@ -170,6 +170,10 @@ h1,
     z-index: 1000; /* Make sure it stays on top */
   }
 
+  .page-wrapper {
+    padding-top: 60px; /* Add this to give space for the fixed navbar */
+  }
+
   .navbar-link {
     font-family: "Figtree";
     color: #333;
@@ -183,7 +187,7 @@ h1,
     display: none; /* Hide vertical line in navbar */
   }
 }
-/* ---------------------MEDIA------------------------- */
+
 
 @media (max-width: 750px) {
   .heading-link {
