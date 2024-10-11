@@ -5,13 +5,13 @@
 }
 
 .outer-work-wrapper {
-  margin-top: 82rem;
+  margin-top: 15rem;
   padding-left: 30px;
   display: flex;
   flex-direction: column;
   max-width: 637px;
- padding-bottom: 5rem;
- flex-wrap: wrap;
+  padding-bottom: 5rem;
+  flex-wrap: wrap;
 }
 
 .image-text-wrapper {
@@ -19,9 +19,9 @@
 }
 
 .heading-work-link {
-   text-decoration: none;
-   font-size: 24px;
-   padding: 15px;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 15px;
 }
 
 .image-hover-color {
@@ -35,6 +35,10 @@
 }
 
 .medium-text {
-    padding: 20px;
+  padding: 20px;
 }
 
+.all-text-wrapper {
+  margin-top: -70rem;
+  
+}
