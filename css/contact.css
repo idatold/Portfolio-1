@@ -8,7 +8,24 @@ img {
     max-width: 15rem;
 }
 
+.title-container {
+    position: relative;
+    height:180px; /* Adjust this height based on your design */
+    overflow: hidden; /* Hides the title before it slides in */
+}
 
+.slide-up-title {
+    font-size: 10rem;
+    opacity: 1; /* Start invisible */
+    transform: translateY(100%); /* Positioned below the container */
+    transition: opacity 2s ease-out, transform 2s ease-out; /* Duration of animation */
+}
+
+/* The class that triggers the animation */
+.slide-up {
+    opacity: 1;
+    transform: translateY(0); /* Moves it to its final position */
+}
 
 
 

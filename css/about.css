@@ -2,12 +2,14 @@
 
 .page-wrapper {
   flex-wrap: wrap;
+  align-items:flex-start;
 }
 
 .all-text-wrapper {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  flex-shrink: initial;
 }
 
 .medium-text {
@@ -19,6 +21,11 @@
   max-width: 556px;
 }
 
-img {
+
+.small-text-decor {
+  text-decoration: underline;
+}
+.img {
   padding: 20px;
+  top: 0%;
 }
