@@ -21,12 +21,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   flex-wrap: wrap;
 }
 
 /* ---------------------------------------------- */
-
-
 
 .hero-container {
   display: flex;
@@ -41,16 +40,11 @@ body {
   flex-direction: column; /* Stack links vertically */
   justify-content: center;
   gap: 1rem; /* Space between each link */
-  overflow: hidden; /* Ensure no overflow cutting off text */
 }
 
 .heading-link {
   text-decoration: none;
   text-transform: uppercase;
-  transition: transform 0.5s ease, font-style 0.1 s ease;
-  white-space: nowrap; /* Prevent text wrapping */
-  padding-right: 15px; /* Add padding to avoid cut-off on the right */
-  overflow: hidden; /* Ensure no overflow */
   font-size: 102px;
 }
 
@@ -95,10 +89,10 @@ h1,
   font-size: 20px;
 }
 
-.contact-links:hover, .heading-work-link:hover {
+.contact-links:hover,
+.heading-work-link:hover {
   text-decoration: line-through;
-   }
-   
+}
 
 .image-wrapper {
   position: relative;
@@ -128,7 +122,6 @@ h1,
   text-transform: uppercase;
   padding: 20px;
   font-size: 15px;
-
 }
 
 .vertical-line {
@@ -145,4 +138,90 @@ h1,
 ::selection {
   background-color: #333; /* Color of the highlighted background */
   color: #fff; /* Color of the text when highlighted */
+}
+
+@media (max-width: 1100px) {
+  .hero-container {
+    width: 700px;
+  }
+
+  .heading-link {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* Hide sidebar */
+  .sidebar-wrapper {
+    display: none;
+  }
+
+  /* Create a navbar */
+  .navbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1efe6;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Make sure it stays on top */
+  }
+
+  .navbar-link {
+    font-family: "Figtree";
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .vertical-line {
+    display: none; /* Hide vertical line in navbar */
+  }
+}
+
+@media (max-width: 750px) {
+  .heading-link {
+    font-size: 60px;
+  }
+
+  .hero-container img {
+    width: 200px;
+  }
+
+  .hero-container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 660px) {
+  .heading-link {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .hero-container img {
+    width: 150px;
+  }
+
+  .hero-container {
+    max-width: 350px;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .small-text, h1 {
+   font-size: 18px;
+   text-align: center;
+  }
+
+  .small-text-wrapper {
+    margin: auto;
+  }
+
+
+
 }
