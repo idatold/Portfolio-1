@@ -112,11 +112,14 @@ h1,
   background-color: #f1efe6;
 }
 
+.no-deco {
+  text-decoration: none;
+}
+
 .sidebar-font {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   transform: rotate(180deg);
-  text-decoration: none;
   font-family: "Figtree";
   color: #333;
   text-transform: uppercase;
@@ -128,8 +131,8 @@ h1,
   width: 1px;
   height: 150px; /* Adjust the height to fit your design */
   background-color: black; /* Color of the vertical line */
-  margin: 10px 0; /* Space between the line and the surrounding text */
-  margin-left: 1.5rem;
+  margin: 0; /* Space between the line and the surrounding text */
+  margin-left: 1.8rem;
  
 }
 
@@ -140,6 +143,8 @@ h1,
   background-color: #333; /* Color of the highlighted background */
   color: #fff; /* Color of the text when highlighted */
 }
+
+
 /* ---------------------MEDIA------------------------- */
 @media (max-width: 1100px) {
   .hero-container {
@@ -181,6 +186,7 @@ h1,
     text-decoration: none;
     font-size: 15px;
     padding: 10px;
+    text-decoration: underline;
   }
 
   .vertical-line {
