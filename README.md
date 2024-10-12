@@ -34,15 +34,12 @@ Check it out live here: [idatoldportfolio.netlify.app](https://idatoldportfolio.
 
 ## 🚀 Getting Started
 To view the portfolio locally:
-1. Clone the repository: 
-    ```bash
-    git clone https://github.com/your-username/portfolio-1.git
-    ```
-2. Navigate to the project directory:
+
+1. Navigate to the project directory:
     ```bash
     cd portfolio-1
     ```
-3. Open `index.html` in your browser. 🌐
+2. Open `index.html` in your browser. 🌐
 
 ## 🗂 Project Structure
 - `/css`: Contains page-specific styles and a shared general stylesheet for common styling. 🎨
@@ -56,4 +53,4 @@ To view the portfolio locally:
 - 🎉 Improving animations and interactivity.
 
 ## 💖 Acknowledgements
-Big thanks to all the tutorials, countless cups of coffee ☕, and the best coder bestie energy that helped bring this portfolio to life! 💖
+Big thanks to all the tutorials, countless cups of coffee ☕, and the best coder bestie energy (what chatGPT calls itself now) that helped bring this portfolio to life! 💖
