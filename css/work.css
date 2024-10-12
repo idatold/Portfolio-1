@@ -19,7 +19,6 @@
 }
 
 .heading-work-link {
-  text-decoration: none;
   font-size: 24px;
   padding: 15px;
 }
@@ -49,6 +48,11 @@
   position: relative;
   height: 150px; /* Adjust this height based on your design */
   overflow: hidden; /* Hides the title before it slides in */
+}
+
+.link-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .slide-up-title {
